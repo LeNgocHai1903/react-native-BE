@@ -13,7 +13,7 @@ const signup = async (req, res, next) => {
         new HttpError('Dữ liệu đầu vào không hợp lệ. Vui lòng kiểm tra lại', 422)
       ) ;
     }
-    const { name, email, password } = req.body;
+    const { name, email, password, image } = req.body;
   
     let existingUser; 
   try {
@@ -32,6 +32,7 @@ const signup = async (req, res, next) => {
       name,
       email,
       password,
+      image: image,
     })
   
     try {
