@@ -1,0 +1,8 @@
+{
+    "env": 
+    {
+        "DB_USER":"reactnative",
+        "DB_PASSWORD":"lehai19031998",
+        "DB_NAME" : "mern"
+    }
+}
